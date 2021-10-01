@@ -1,1 +1,17 @@
-< script> document.body.style.backgroundColor = 'grey'; var button = document.createElement('button'); button.innerHTML = "Can't click this"; button.style.position = 'absolute'; button.style.left = '50%'; button.style.top = '50%'; button.style.transform = 'translate(-50%, -50%)'; button.style.width = '100px'; button.style.height = '100px'; document.body.appendChild(button); button.addEventListener('mouseover', function() { button.style.left = Math.random() * window.innerWidth + 'px'; button.style.top = Math.random() * window.innerHeight + 'px'; }); < /script>
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <title>Unclickable button</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <script>
+    document.body.style.backgroundColor = 'grey'; var button = document.createElement('button'); button.innerHTML = "Can't click this"; button.style.position = 'absolute'; button.style.left = '50%'; button.style.top = '50%'; button.style.transform = 'translate(-50%, -50%)'; button.style.width = '100px'; button.style.height = '100px'; document.body.appendChild(button); button.addEventListener('mouseover', function() { button.style.left = Math.random() * window.innerWidth + 'px'; button.style.top = Math.random() * window.innerHeight + 'px'; });
+</script>
+</body>
+
+</html>
